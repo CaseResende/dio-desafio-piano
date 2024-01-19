@@ -24,7 +24,7 @@ body {
   justify-content: space-between;
 }
 
-/* Estilização do título do cabeçalho */
+/* Estilização do título do Piano Virtual */
 header h2 {
   font-size: 1.6rem;
 }
@@ -35,17 +35,20 @@ header .column {
   align-items: center;
 }
 
+/* Estilização dos rótulos nas colunas do cabeçalho */
 header .column span {
   font-weight: 500;
   margin-right: 15px;
   font-size: 1.19rem;
 }
 
+/* Estilização do controle de volume */
 .volume-slider input {
   accent-color: #ffffff;
   cursor: pointer;
 }
 
+/* Estilização da chave de exibir/ocultar teclas */
 .keys-check input {
   width: 60px;
   height: 30px;
@@ -56,6 +59,7 @@ header .column span {
   position: relative;
 }
 
+/* Estilização da chave de exibir/ocultar teclas clicada */
 .keys-check input::before {
   content: "";
   height: 20px;
@@ -69,16 +73,19 @@ header .column span {
   transition: all 0.3s ease;
 }
 
+/* Estilização da chave de exibir/ocultar teclas clicada */
 .keys-check input:checked::before {
   left: 2.1rem;
-  background-color: #ffffff; /* Colocar verde */
+  background-color: #ffffff;
 }
 
+/* Estilização do bloco de teclas */
 .piano-keys {
   display: flex;
   margin-top: 40px;
 }
 
+/* Estilização das teclas */
 .piano-keys .key {
   cursor: pointer;
   user-select: none;
@@ -88,6 +95,7 @@ header .column span {
   text-transform: uppercase;
 }
 
+/* Estilização das teclas brancas */
 .piano-keys .white {
   width: 70px;
   height: 230px;
@@ -96,6 +104,7 @@ header .column span {
   background: linear-gradient(#ffffff 96%, #eeeeee 4%);
 }
 
+/* Estilização das teclas pretas */
 .piano-keys .black {
   width: 44px;
   height: 140px;
@@ -106,6 +115,7 @@ header .column span {
   background: linear-gradient(#333333, #000000);
 }
 
+/* Estilização das letras nas teclas */
 .piano-keys span {
   position: absolute;
   bottom: 20px;
@@ -114,16 +124,19 @@ header .column span {
   font-size: 1.13rem;
 }
 
+/* Estilização das teclas brancas quando ativadas */
 .piano-keys .white.active {
   box-shadow: inset -5px 5px 20px rgba(0, 0, 0, 0.2);
   background: linear-gradient(to bottom #ffffff 0%, #eeeeee 100%);
 }
 
+/* Estilização das teclas pretas quando ativadas */
 .piano-keys .black.active {
   box-shadow: inset -5px 5px 10px rgba(255, 255, 255, 0.1);
   background: linear-gradient(to bottom #000000, #434343);
 }
 
+/* Estilização para ocultar as letras nas teclas */
 .piano-keys .key.hide span {
-  display:none;
+  display: none;
 }
